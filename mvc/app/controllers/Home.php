@@ -6,4 +6,8 @@ class Home
     {
         echo 'Home/index';
     }
+    public function test()
+    {
+        echo 'OK';
+    }
 }
