@@ -11,7 +11,7 @@ public function view($name)
 
     else 
     {
-    require '../app/views/404.php';
+    require '../app/views/_404.php';
     }
 }
 
