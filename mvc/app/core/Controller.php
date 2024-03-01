@@ -7,7 +7,7 @@ class Controller
         {
             require '../app/views/' . $name . '.php';
         }else{
-            require '../app/views/404.php'
+            require '../app/views/404.php';
         }
     }
 }
