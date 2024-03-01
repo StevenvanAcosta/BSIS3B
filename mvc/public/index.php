@@ -1,4 +1,4 @@
- <?php
+<?php
 
- require '../app/core/init.php'; 
- $app = new App();
+require '../app/core/init.php'; 
+$app = new App();

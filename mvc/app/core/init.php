@@ -2,7 +2,7 @@
 
 
 require 'functions.php';
-require 'Controller.php';
 require 'App.php';
+require 'Controller.php';
 
 

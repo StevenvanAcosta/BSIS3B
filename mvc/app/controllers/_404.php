@@ -1,9 +1,10 @@
 <?php 
 
-class _404
+class _404 extends Controller
 {
     public function index()
     {
-        $this->views('404');
+        $this->view('_404.php');
     }
+
 }
