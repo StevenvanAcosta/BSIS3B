@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
-    <h1>Home page</h1>
+    <h1>Home</h1>
 </body>
 </html>
