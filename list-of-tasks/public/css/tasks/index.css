@@ -1,0 +1,75 @@
+:root{
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: block;
+}
+
+table{
+    margin-top: .5rem;
+    border-collapse: collapse;
+}
+
+table th{
+    padding: .5rem;
+}
+
+table tr:nth-child(odd){
+    background-color: gainsboro;
+}
+
+table, td, th{
+    border: 1px solid grey;
+}
+
+table td{
+    padding: .25rem .5rem;
+}
+
+.actions-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+}
+
+.btnGreen{
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btnGreen:hover{
+    background-color: darkgreen;
+}
+
+.btnRed{
+    text-decoration: none;
+    color: white;
+    background-color: darkred;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btnRed:hover{
+    background-color: rgb(69.5, 0, 0);
+}
+
+.no-result{
+    text-align: center;
+}

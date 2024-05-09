@@ -1,0 +1,70 @@
+:root{
+    font-size: 16px;
+}
+
+body{
+    margin: 0px;
+    display: grid;
+    place-items: center;
+}
+
+.btnGreen{
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    margin-bottom: 5px;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btnGreen:hover{
+    background-color: darkgreen;
+}
+
+.btnRed{
+    text-decoration: none;
+    color: white;
+    background-color: darkred;
+    margin-bottom: 5px;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btnRed:hover{
+    background-color: rgb(69.5, 0, 0);
+}
+
+textarea{
+    min-height: 3rem;
+    resize: none;
+}
+
+label, input[type='text'], textarea, select, input[type='datetime-local']{
+    font-size: 1rem;
+}
+
+input[type='datetime-local']{
+    width: calc(100% - 5.5px);
+}
+
+form{
+    display: grid;
+    grid-template-columns: 100px 300px;
+    row-gap: 5px;
+}
+
+form button[type='submit']{
+    grid-column: span 2;
+}
+
+@media screen and (max-width: 767px) {
+    form{
+        grid-template-columns: 100px auto;
+    }
+}
