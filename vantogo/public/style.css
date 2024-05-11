@@ -142,6 +142,9 @@ header{
     padding: 20px;
     border-radius: 0.5rem;
 }
+.form-container .input-box input{
+    width: 200px;
+}
 .input-box{
     flex: 1 1 7rem;
     display: flex;
@@ -167,6 +170,7 @@ header{
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
+    width: 150px;
 }
 .form-container form .btn:hover{
     background: var(--main-color);
@@ -403,7 +407,7 @@ header{
     }
     header .navbar{
         position: absolute;
-        top: -500px;
+        top: -800px;
         left: 0;
         right: 0;
         display: flex;

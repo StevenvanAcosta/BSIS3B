@@ -1,25 +1,29 @@
 <?php
+
 class Database
 {
-    private function connect()
-    {
-        $string = "mysql:host=localhost;dbname=mvc_db";
-        $con = new PDO($string, 'root', '');
-        return $con;
-    }
-    public function query($query, $data =[])
-    {
-        $con = $this->connect();
-        $stm = $con ->prepare($query);
-        $check = $stm->execute($data);
+  private function connect()
+  {
+    // Table -> users, Fields -> id, firstname, lastname, email, password
+    $string = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
+    $con = new PDO($string, DB_USER, DB_PASS);
+    return $con;
+  }
 
-        if ($check)
-        {
-            $result = $stm->fetchALL(PDO::FETCH_OBJ);
-            if(is_array($result) && count($result) > 0) {
-                return $result;
-            }
-        }
-        return false;
+  public function query($query, $data = [])
+  {
+    $con = $this->connect();
+    $stm = $con->prepare($query);
+
+    $check = $stm->execute($data);
+
+    if ($check) {
+      $result = $stm->fetchAll(PDO::FETCH_OBJ);
+
+      if (is_array($result) && count($result) > 0) {
+        return $result;
+      }
     }
+    return false;
+  }
 }
