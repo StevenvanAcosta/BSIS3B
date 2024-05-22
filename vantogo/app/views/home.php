@@ -66,7 +66,7 @@
                                     <input type="date" name="" id="">
                                 </div>
                         <a href ="reservation">
-                        <input type="submit" name="" id="" class="btn">
+                        <input type="submit" name="" id="btn" class="btn">
                         </a>
             </form>
         </div>
@@ -99,7 +99,7 @@
                 </div>
         </section>
     <!---------------------------------- Services --------------------------------->
-
+   
         <section class="services" id="services">
             <div class="heading">
                 <span>Best Services</span>
@@ -167,6 +167,7 @@
             </div>
 
             <!------------------------ Pop up window --------------------->
+    <form action="" method="POST">
             <section id="reservation">
             <div class="pop-container">
                 <div class="popup-content">
@@ -213,10 +214,11 @@
                             </div>
                             
                                 <div class="text">
-                                    <input type ="text" placeholder ="Name" required>
-                                    <input type ="text" placeholder ="Email" required>
-                                    <input type ="text" placeholder ="Phone Number" required>
-                                    <input type ="text" placeholder ="Destination" required>
+                                    <input name="fname" value="<?= get_var('fname') ?>" type ="text" placeholder ="FistName" required>
+                                    <input name="lastname" value="<?=get_var('lname') ?>" type ="text" placeholder ="LastName" required>
+                                    <input name="email" value="<?= get_var('email') ?>"type ="text" placeholder ="Email" required>
+                                    <input name="pnum" value="<?= get_var('pnum') ?>"type ="text" placeholder ="Phone Number" required>
+                                    <input name="destination" value="<?= get_var('destination') ?>"type ="text" placeholder ="Destination" required>
                                 </div>
                                 <div class="btn-popup">
                                     <a href="home"><button type="submit">Submit</button></a>
@@ -249,7 +251,7 @@
             </div>
              
         </section>
-        
+    </form>
 
     <!-------------------------------About----------------------------------->
         <section class="about" id="about">
