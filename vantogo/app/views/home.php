@@ -31,7 +31,7 @@
         <li><a href="#reviews">Reviews</a></li>
     </ul>
     <div class="header-btn">
-        <a href="#" class="sign-up">Sign up</a>
+        <a href="signup" class="sign-up">Sign up</a>
         <a href="signin" class="sign-in">Sign In</a>
     </div>
     </header>
