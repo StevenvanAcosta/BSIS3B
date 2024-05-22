@@ -1,8 +1,8 @@
 <?php
 
 define('APP_NAME', 'MVC TEST');
-// define('ROOT', 'http://localhost/GitRepo/vantogo/public');
-define('ROOT', 'http://localhost/Web/vantogo/vantogo/public');
+ define('ROOT', 'http://localhost/GitRepo/vantogo/public');
+//define('ROOT', 'http://localhost/Web/vantogo/vantogo/public');
 define('PATH', 'C:/xampp/htdocs/GitRepo/vantogo/app/views/');
 
 define('DB_HOST', 'localhost');
