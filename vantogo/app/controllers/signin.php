@@ -33,7 +33,7 @@ class signin extends Controller
       }
     }
 
-    $this->view('login', [
+    $this->view('signin', [
       'errors' => $errors
     ]);
   }

@@ -8,7 +8,7 @@ class Database
   {
     // Table -> users, Fields -> id, firstname, lastname, email, password
     $string = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
-    $con = new PDO($string, DB_USER, DB_PASS);
+    $con = new PDO($string, DB_EMAIL, DB_PASS);
     return $con;
   }
 
