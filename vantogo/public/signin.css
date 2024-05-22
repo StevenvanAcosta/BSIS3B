@@ -32,7 +32,8 @@ form{
     float: right;
 }
 .btn-primary{
-    width: 100%;
+    float: right;
+    width: 50%;
     border: none;
     border-radius: 50px;
     background: var(--main-color);

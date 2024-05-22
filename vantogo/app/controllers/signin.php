@@ -1,14 +1,6 @@
 <?php
-    class signin extends Controller{
-        public function index(){
-            $this->view('signin');
-        }
-    }
 
-
-//SIGN IN.............................
-
-    class Login extends Controller
+class signin extends Controller
 {
   public function index()
   {
@@ -27,17 +19,17 @@
 
           Auth::authenticate($row);
           if($_SESSION['USER']->role == 'User'){
-            redirect('dashboard');
+            redirect('home');
           }
-          else if($_SESSION['USER']->role == 'Admin'){
-            redirect('adminpending');
+          else if($_SESSION['USER']-> == 'admin'){
+            redirect('admin')
           }
-          
+         
         } else {
-          $errors['errors'] = "Invalid email or password!";
+          $errors['errors'] = 'Email or Password is not valid.';
         }
       } else {
-        $errors['errors'] = "Invalid email or password!";
+        $errors['errors'] = 'Email or Password is not valid.';
       }
     }
 

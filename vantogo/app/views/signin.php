@@ -15,9 +15,20 @@
                 </div>
   </div>
 
+  <?php if (!empty($errors)): ?>
 
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
 
-<form method="POST">
+  <?php foreach ($errors as $error): ?>
+    <?= $error . "<br>" ?>
+  <?php endforeach; ?>
+
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<?php endif; ?>
+
+<form action="" method="POST" class="w-50 mx-auto">
 <div class="container-fluid">
 <form class="mx-auto">
     <h4 class="text-center">Log In</h4>
@@ -35,7 +46,7 @@
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
-    <button type="submit" class="Login_btn d-grid gap-2 btn btn-primary" type="button" >Login</button><br>
+    <button type="submit" class="btn btn-primary">Login</button>
     <a href="<?= ROOT ?>/users/create">
       <label for="">Create new account</label>
     </a>
