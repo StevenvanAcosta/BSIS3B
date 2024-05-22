@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2024 at 05:27 PM
+-- Generation Time: May 22, 2024 at 11:57 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -64,10 +64,17 @@ CREATE TABLE `vans` (
   `van_id` int(11) NOT NULL,
   `van_name` varchar(50) NOT NULL,
   `van_price` int(11) NOT NULL,
-  `varn_color` varchar(50) NOT NULL,
+  `van_color` varchar(50) NOT NULL,
   `van_transmission` varchar(50) NOT NULL,
   `van_img` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `vans`
+--
+
+INSERT INTO `vans` (`van_id`, `van_name`, `van_price`, `van_color`, `van_transmission`, `van_img`) VALUES
+(1, 'Van Name', 15000, '#000000', 'Some Transmission', 'Capture.PNG');
 
 --
 -- Indexes for dumped tables
@@ -111,7 +118,7 @@ ALTER TABLE `top-deals`
 -- AUTO_INCREMENT for table `vans`
 --
 ALTER TABLE `vans`
-  MODIFY `van_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `van_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

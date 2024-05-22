@@ -2,6 +2,8 @@
 
 class Database
 {
+  public $lastId;
+
   private function connect()
   {
     // Table -> users, Fields -> id, firstname, lastname, email, password
@@ -16,6 +18,7 @@ class Database
     $stm = $con->prepare($query);
 
     $check = $stm->execute($data);
+    $this->lastId = $con->lastInsertId();
 
     if ($check) {
       $result = $stm->fetchAll(PDO::FETCH_OBJ);
