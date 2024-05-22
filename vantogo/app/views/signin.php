@@ -17,13 +17,13 @@
 
 
 
-
+<form method="POST">
 <div class="container-fluid">
 <form class="mx-auto">
     <h4 class="text-center">Log In</h4>
     <div class="mb-3 mt-5">
-        <label for="exampleInputEmail1" class="form-label">User Name</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" name="email" value="<?= get_var('email') ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
     </div>
     <div class="mb-3">
@@ -35,9 +35,13 @@
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
-    <a href="admin" class="btn btn-primary mt-4">  Log In </a>
+    <button type="submit" class="Login_btn d-grid gap-2 btn btn-primary" type="button" >Login</button><br>
+    <a href="<?= ROOT ?>/users/create">
+      <label for="">Create new account</label>
+    </a>
 </form>
 </div>
+</form>
 <!----------Link For Js------------>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
