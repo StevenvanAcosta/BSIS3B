@@ -21,15 +21,15 @@ class signin extends Controller
           if($_SESSION['USER']->role == 'User'){
             redirect('home');
           }
-          else if($_SESSION['USER']-> == 'admin'){
-            redirect('admin')
+          else if($_SESSION['USER']->role == 'Admin'){
+            redirect('admin');
           }
-         
+          
         } else {
-          $errors['errors'] = 'Email or Password is not valid.';
+          $errors['errors'] = "Invalid email or password!";
         }
       } else {
-        $errors['errors'] = 'Email or Password is not valid.';
+        $errors['errors'] = "Invalid email or password!";
       }
     }
 
